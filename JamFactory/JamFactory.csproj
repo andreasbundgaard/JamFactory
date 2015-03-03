@@ -82,6 +82,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Controller\ActivityController.cs" />
+    <Compile Include="Controller\Database\OptimeringDatabaseFacade.cs" />
     <Compile Include="Controller\DevelopmentController.cs" />
     <Compile Include="Controller\IngredientController.cs" />
     <Compile Include="Controller\ProductController.cs" />
@@ -145,9 +146,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\Database\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
