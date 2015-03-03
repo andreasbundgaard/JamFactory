@@ -18,6 +18,7 @@ namespace JamFactory.Controller {
             //LOLfff
             //NU VIRKER DET!
             //Hej det er mig!!!
+            //Hej hvem er det???
         }
     }
 }
