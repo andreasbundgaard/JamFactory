@@ -3,10 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Start" Height="400" Width="500">
     <Grid Margin="0,0,-28.4,0.4">
-        <Button  Name="Beregn" Content="Beregn det for satan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Margin="316,309,0,0" Height="37"/>
-        <TextBox Name="frugtvægt"  HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" Text="Intast vægt" VerticalAlignment="Top" Width="123" Margin="81,82,0,0"/>
-        <TextBox Name="frugtpris" HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" Text="Intast indkøbspris" VerticalAlignment="Top" Width="132" Margin="316,82,0,0"/>
-        <ComboBox Name="frugtvalg" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="81,190,0,0"/>
+        <Button  Name="Beregn" Content="Beregn det for satan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="266" Margin="123,122,0,0" Height="159"/>
 
     </Grid>
 </Window>
