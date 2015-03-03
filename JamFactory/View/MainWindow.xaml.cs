@@ -25,6 +25,9 @@ namespace JamFactory
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
+            View.Group_A.Start window = new View.Group_A.Start();
+            window.Show();          
+            this.Close();
 
         }
 
