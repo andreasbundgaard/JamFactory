@@ -13,7 +13,8 @@ namespace JamFactory.Controller {
             // Hej spassere lmao may may 
             //Hey
             // 100
-            //HEEEEEJ
+            //HEEEEEJfdsfsd
+            //DET VIRKER!!
             //LOLfff
         }
     }
