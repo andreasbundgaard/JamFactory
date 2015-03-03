@@ -1,7 +1,7 @@
 ﻿<Window x:Class="JamFactory.View.Group_A.Start"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Start" Height="400" Width="500">
+        Title="Start" Height="400" Width="500" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,-28.4,0.4">
         <Button  Name="Beregn" Content="Beregn det for satan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="266" Margin="123,122,0,0" Height="159"/>
 
