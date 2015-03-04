@@ -9,8 +9,21 @@ using System.Data.SqlClient;
 namespace JamFactory.Controller.Database {
     class OptimeringDatabaseFacade {
         //Database 20
-        static SqlConnection dbconn;
-        static string _connectionString = "Server=ealdb1.eal.local; User ID=ejl20_usr; Password=Baz1nga20; Database=EJL20_DB";
+        private static SqlConnection dbconn;
+        private static string _connectionString = "Server=ealdb1.eal.local; User ID=ejl20_usr; Password=Baz1nga20; Database=EJL20_DB";
+
+        public List<Model.Product> GetProducts() {
+            List<Model.Product> Products = new List<Model.Product>();
+            try {
+
+
+                return Products;
+            }
+            catch (Exception) {
+                
+                throw;
+            }
+        }
 
         private static void ConnectDB() {
             dbconn = new SqlConnection(_connectionString);
