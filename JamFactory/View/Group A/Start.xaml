@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Start" Height="400" Width="500" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,2,0">
-        <Button  Name="Beregn" Content="Beregn det for satan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="266" Margin="123,122,0,0" Height="159"/>
-
+        <Button  Name="Calculate" Content="CALCULATE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="266" Margin="123,122,0,0" Height="159"/>
     </Grid>
 </Window>
