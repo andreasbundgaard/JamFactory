@@ -82,6 +82,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Controller\ActivityController.cs" />
+    <Compile Include="Controller\CalculationHelper.cs" />
     <Compile Include="Controller\Database\OptimeringDatabaseFacade.cs" />
     <Compile Include="Controller\DevelopmentController.cs" />
     <Compile Include="Controller\IngredientController.cs" />

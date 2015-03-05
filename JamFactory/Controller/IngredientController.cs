@@ -18,13 +18,13 @@ namespace JamFactory.Controller {
         /* Calculates the actual price to produce a product*/
         public double CalculateProductPrice()
         {
-
+            return 0.0;
         }
 
         /* Calculates the product waste from all of the products and the fruits remaning*/
         public double CalculateProductsWaste(List<Model.Fruit> FruitsRemaining, List<Model.IngredientLine> FruitsUsed)
         {
-
+            return 0.0;
         }
 
         /* Calculates the products that can be made out from the remaining resources*/
