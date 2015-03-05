@@ -15,6 +15,8 @@ namespace JamFactory.Controller.Database {
         public List<Model.Product> GetAllProducts() {
             List<Model.Product> Products = new List<Model.Product>();
             try {
+
+                ConnectDB();
         
                 SqlCommand cmd = new SqlCommand("GetAllProducts", dbconn);
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -42,7 +44,9 @@ namespace JamFactory.Controller.Database {
             }
         }
 
-        public List<Model.IngredientLine>
+        public List<Model.IngredientLine> GetAllIngredientLine() {
+
+        }
 
         private static void ConnectDB() {
             dbconn = new SqlConnection(_connectionString);
