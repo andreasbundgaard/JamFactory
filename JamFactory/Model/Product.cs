@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace JamFactory.Model {
     class Product {
+        public int RecipeID { get; set; }
         public string Variant { get; set; }
         public int Size { get; set; }
         public int FruitContent { get; set; }
         public double Price { get; set; }
 
-        public Product(string variant, int size, int fruitContent, double price) {
+        public Product(int recipeid, string variant, int size, int fruitContent, double price) {
+            RecipeID = recipeid;
             Variant = variant;
             Size = size;
             FruitContent = fruitContent;
