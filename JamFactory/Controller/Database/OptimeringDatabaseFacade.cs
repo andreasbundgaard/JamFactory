@@ -15,7 +15,6 @@ namespace JamFactory.Controller.Database {
         public List<Model.Product> GetAllProducts() {
             List<Model.Product> Products = new List<Model.Product>();
             try {
-
                 ConnectDB();
         
                 SqlCommand cmd = new SqlCommand("GetAllProducts", dbconn);
@@ -44,8 +43,43 @@ namespace JamFactory.Controller.Database {
             }
         }
 
-        public List<Model.IngredientLine> GetAllIngredientLine() {
+        public List<Model.IngredientLine> GetAllIngredientLines() {
+            List<Model.IngredientLine> IngredientLines = new List<Model.IngredientLine>();
 
+            try {
+                ConnectDB();
+        
+                SqlCommand cmd = new SqlCommand("GetAllIngredientLines", dbconn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                SqlDataReader rdr;
+                rdr = cmd.ExecuteReader();
+
+                while (rdr.HasRows && rdr.Read()) {
+                    int IngredientLineAmount = (int)rdr["IngredientLine.Amount"];
+                    string RecipeName = (string)rdr["Recipe.Name"];
+                    string Dokumentation = (string)rdr["Recipe.Dokumentation"];
+                    string Correspondence = (string)rdr["Recipe.Correspondence"];
+                    //int TestVariant = (int)rdr["Recipe.TestVariant"];
+                    double Price = (double)rdr["Ingredient.Price"];
+                    int IngredientAmount = (int)rdr["Ingredient.Amount"];
+                    string IngredientName = (string)rdr["Ingredient.Name"];
+                    int Gram = (int)rdr["Fruit.Gram"];
+                    string Season = (string)rdr["Fruit.Season"];
+                    Model.Recipe r = new Model.Recipe(RecipeName, Dokumentation, Correspondence);
+                    Model.Fruit f = new Model.Fruit(IngredientName, Price, IngredientAmount, Gram, Season);
+                    Model.IngredientLine il = new Model.IngredientLine(IngredientLineAmount, r, f);
+                    IngredientLines.Add(il);
+                }
+
+                CloseDB();
+
+                return IngredientLines;
+            }
+            catch (Exception) {
+                
+                throw;
+            }
         }
 
         private static void ConnectDB() {

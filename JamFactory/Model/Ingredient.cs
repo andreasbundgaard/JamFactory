@@ -11,11 +11,11 @@ namespace JamFactory.Model
         public string Name { get; set; }
         public double Price { get; set; }
         public int Amount { get; set; }
-        public Ingredient(string name, double price, int amount)
+        /*public Ingredient(string name, double price, int amount)
         {
             Name = name;
             Price = price;
             Amount = amount;
-        }
+        }*/
     }
 }
