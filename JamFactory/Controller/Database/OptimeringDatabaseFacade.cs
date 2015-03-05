@@ -42,7 +42,7 @@ namespace JamFactory.Controller.Database {
             }
         }
 
-        public List<Model.>
+        public List<Model.IngredientLine>
 
         private static void ConnectDB() {
             dbconn = new SqlConnection(_connectionString);
