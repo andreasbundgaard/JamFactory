@@ -8,12 +8,14 @@ namespace JamFactory.Model {
     class IngredientLine {
         public int Amount { get; set; }
         public Recipe Recipe { get; set; }
-        public Ingredient Ingredient { get; set; }
+        //public Ingredient Ingredient { get; set; }
+        public Fruit Fruit { get; set; }
 
-        public IngredientLine(int amount, Recipe recipe, Ingredient ingredient) {
+        public IngredientLine(int amount, Recipe recipe, /*Ingredient ingredient*/ Fruit fruit) {
             Amount = amount;
             Recipe = recipe;
-            Ingredient = ingredient;
+            //Ingredient = ingredient;
+            Fruit = fruit;
         }
     }
 }

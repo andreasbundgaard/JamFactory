@@ -32,7 +32,7 @@ namespace JamFactory.Controller {
         {
             List<Model.Product> AllProducts = _DBF.GetAllProducts();
             List<Model.IngredientLine> AllIngredientLines = _DBF.GetAllIngredientLines();
-            List<Model.Fruit> AllFruits = _DBF.GetAllFruits();
+            //List<Model.Fruit> AllFruits = _DBF.GetAllFruits();
 
 
         }
